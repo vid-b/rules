@@ -1,0 +1,37 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <persistence-unit name="rules-persistence-test">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <properties>
+            <!-- database connection -->
+            <property name="javax.persistence.jdbc.driver" value="com.sap.db.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:sap://localhost:30015/AIN_DEV" />
+            <property name="javax.persistence.jdbc.user" value="AIN_TECH_USER" />
+            <property name="javax.persistence.jdbc.password" value="Demo123." />
+        </properties>
+
+        <class>com.sap.iot.ain.rules.models.Action</class>
+        <class>com.sap.iot.ain.rules.models.GetUsersForAnOrganizations</class>
+        <class>com.sap.iot.ain.rules.models.Rule</class>
+        <class>com.sap.iot.ain.rules.models.RuleAction</class>
+        <class>com.sap.iot.ain.rules.models.RuleAggregation</class>
+        <class>com.sap.iot.ain.rules.models.RuleEvent</class>
+        <class>com.sap.iot.ain.rules.models.RuleJobSchedule</class>
+        <class>com.sap.iot.ain.rules.models.RuleJobTriggers</class>
+        <class>com.sap.iot.ain.rules.models.RuleLog</class>
+        <class>com.sap.iot.ain.rules.models.RuleRun</class>
+        <class>com.sap.iot.ain.rules.models.RuleRunResult</class>
+        <class>com.sap.iot.ain.rules.models.RuleStep</class>
+        <class>com.sap.iot.ain.rules.models.RuleSubject</class>
+        <class>com.sap.iot.ain.rules.models.RuleWithEvents</class>
+        <class>com.sap.iot.ain.rules.odata.entities.GetAssignedEquipmentsForRule</class>
+        <class>com.sap.iot.ain.rules.odata.entities.GetUnassignedEquipmentsForRule</class>
+        <class>com.sap.iot.ain.rules.odata.entities.RuleRunLog</class>
+        <class>com.sap.iot.ain.rules.odata.entities.Rules</class>
+        <class>com.sap.iot.ain.rules.odata.entities.StandardRules</class>
+        <class>com.sap.iot.ain.rules.models.RuleDescription</class>
+
+
+    </persistence-unit>
+</persistence>

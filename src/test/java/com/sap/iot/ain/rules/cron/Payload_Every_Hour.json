@@ -1,0 +1,4 @@
+{
+		"minute":{ "value" : 15 , "operation":"ON"},
+		"hour":{ "value" : 1 , "operation":"EVERY"}
+}

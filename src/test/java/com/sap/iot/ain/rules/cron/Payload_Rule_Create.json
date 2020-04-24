@@ -1,0 +1,24 @@
+{
+					"rule": {
+						"name": "the_name_rule",
+						"description": "This rule should run yearly",
+						"isEnabled": "true"
+					},
+					"ruleSubject": {
+						"subjectID": "74766BA7CA7C4E50A89CA84125ADF3B8",
+						"subjectType": 1
+					},
+					"ruleAggregations": [],
+					"ruleSteps": [],
+					"ruleEvents": [{
+						"schedule":{
+							"minute":{ "value" : 10 , "operation":"ON"},
+							"hour":{ "value" : 2 , "operation":"ON"},
+							"month":{"value" : 2 , "operation":"ON"},
+							"year":{"value":1,"operation":"EVERY"}
+						},
+						"eventID": "schedule",
+						"runSchedule": "0 0/5 * * * ?"
+					}],
+					"ruleActions": []
+}

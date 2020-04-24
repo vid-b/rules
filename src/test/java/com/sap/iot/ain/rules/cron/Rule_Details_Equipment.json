@@ -1,0 +1,106 @@
+{
+  "rule": {
+    "client": "F116995C0A6E4326A98723333CE2291F",
+    "id": "40f814ac6c3f488cadd0235fcc8ccc19",
+    "name": "Cm1908_attributeET",
+    "description": null,
+    "ruleType": null,
+    "priority": null,
+    "isEnabled": "true",
+    "tenantSubDomain": "dca-test",
+    "ruleExpression": null,
+    "systemAdministrativeData": {
+      "systemAdministrativeDataCreatedByUserID": "77FE71E1A4174EBFA307F3FC1D89C13E",
+      "systemAdministrativeDataCreationDateTime": 1565947984102,
+      "systemAdministrativeDataLastChangedByUserID": "77FE71E1A4174EBFA307F3FC1D89C13E",
+      "systemAdministrativeDataLastChangeDateTime": 1565948022548
+    }
+  },
+  "ruleSteps": [{
+    "client": "F116995C0A6E4326A98723333CE2291F",
+    "id": "1a27cb37c1a144f7b23fd31ff57b7079",
+    "ruleID": "40f814ac6c3f488cadd0235fcc8ccc19",
+    "sequenceNo": 1,
+    "isStepOperator": 0,
+    "field1": "B1C27715ADF0401EA666BCFE88373AD8",
+    "field1Type": "NORMAL",
+    "field1TemplateType": "1",
+    "operator": "=",
+    "field2": "True",
+    "field2Type": "CONSTANT",
+    "field2TemplateType": null,
+    "level": 1,
+    "field1Property": null,
+    "field1Group": "F6F0570E610B4DE988FB817B754975A1",
+    "field2Property": null,
+    "field2Group": "",
+    "dataType": "boolean",
+    "field1IsIndicator": null,
+    "field2IsIndicator": "",
+    "field1Template": "11D2C84CCA124CC19D4550AC81A34A33",
+    "field2Template": "",
+    "executionStatus": false,
+    "field1PST": null,
+    "field2PST": null,
+    "field1Value": null,
+    "field2Value": null,
+    "field2FromRange": null,
+    "field2ToRange": null
+  }],
+  "ruleSubject": {
+    "client": "F116995C0A6E4326A98723333CE2291F",
+    "id": "4ffd282d57fa43b5a5693c2104699d39",
+    "ruleID": "40f814ac6c3f488cadd0235fcc8ccc19",
+    "subjectID": "9940BB734A8E45298551D3F74BE5C273",
+    "subjectExternalId": null,
+    "subjectType": "1",
+    "timestamp": null,
+    "equipments": null,
+    "model": null
+  },
+  "ruleAggregations": [],
+  "ruleEvents": [{
+    "client": "F116995C0A6E4326A98723333CE2291F",
+    "id": "c795bf070e0e45c0aa21b1254ff59adf",
+    "ruleID": "40f814ac6c3f488cadd0235fcc8ccc19",
+    "eventID": "schedule",
+    "runSchedule": "0 */1 * * * ? *",
+    "notRunSchedule": null,
+    "eventName": null,
+    "crondescription": "every minute",
+    "schedule": {
+      "second": {
+        "value": 0,
+        "operation": "ON"
+      },
+      "minute": {
+        "value": 1,
+        "operation": "EVERY"
+      },
+      "hour": null,
+      "month": null,
+      "year": null,
+      "day": null,
+      "week": null
+    }
+  }],
+  "schedule": "0 */1 * * * ? *",
+  "ruleActions": [{
+    "client": "F116995C0A6E4326A98723333CE2291F",
+    "id": "4786df7bf1844077b99e15938f3e545e",
+    "type": "REST",
+    "ruleID": "40f814ac6c3f488cadd0235fcc8ccc19",
+    "name": null,
+    "multipleEmails": null,
+    "description": "ATAUG16_WOInD",
+    "actionParams": "{\"externalID\":\"dca.test.pdms.events:E_ATAUG16_WOInD\",\"alertTypeGroupID\":\"1BB299E535964019B6D98C7976D06EF1\",\"alertID\":\"B604272DCAD4452980EB8C34D8899ADE\",\"severity\":\"1\",\"severityDescription\":\"Information\",\"errorCode\":\"1001\",\"status\":\"New\"}",
+    "actionId": "alerttype",
+    "alertTypeId": "dca.test.pdms.events:E_ATAUG16_WOInD"
+  }],
+  "ruleDescription": {
+    "client": "F116995C0A6E4326A98723333CE2291F",
+    "ruleID": "40f814ac6c3f488cadd0235fcc8ccc19",
+    "languageISOCode": "en",
+    "longDescription": ""
+  }
+}
